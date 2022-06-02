@@ -22,6 +22,8 @@ body {
 }
 
 .nav {
+    padding-top: 20px;
+    padding-left: 50px;
     background-color: rgb(105, 123, 202);
     color: white;
     display: grid;
@@ -35,16 +37,57 @@ body {
     z-index: 2;
 }
 
+.nav-header {
+    list-style-image: url(images/view-dashboard.png);
+}
+
 .nav-buttons ul, .nav-settings ul{
     list-style-type: none;
-    text-align: center;
+    list-style-position: inside;
     margin: 0;
     padding: 0;
     line-height: 5vh;
+    text-align: left;
 }
 
-.nav-buttons li, .nav-settings li {
+li {
 
+}
+
+li[home] {
+    list-style-image: url(images/home.png);
+}
+
+li[profile] {
+    list-style-image: url(images/card-account-details-outline.png);
+}
+
+li[messages] {
+    list-style-image: url(images/message-settings.png);
+}
+
+li[history] {
+    list-style-image: url(images/clock-time-three-outline.png);
+}
+
+li[tasks] {
+    list-style-image: url(images/note-multiple.png);
+}
+
+li[communities] {
+    list-style-image: url(images/home.png);
+}
+
+li[settings] {
+    list-style-image: url(images/cog.png);
+}
+
+li[support] {
+    list-style-image: url(images/help-box.png);
+}
+
+li[privacy] {
+    list-style-image: url(images/shield-check.png);
 }
 
 .main-content {
