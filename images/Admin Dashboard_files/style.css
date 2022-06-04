@@ -26,23 +26,20 @@ body {
 .upper-header,
 .lower-header {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
     margin: 30px 50px;
     align-content: center;
 }
 
 .searchbar {
     display: flex;
-    flex: 1;
     gap: 10px;
-    height: 50%;
 }
 
 .searchbar input {
     border: none;
-    width: 50%;
-    border-radius: 20px;
-    background-color: rgb(205, 222, 235);
+    border-radius: 10px;
+    background-color: rgb(226, 222, 222);
 }
 
 .nav {
@@ -90,5 +87,5 @@ body {
 }
 
 .main-content {
-    background-color: rgb(205, 222, 235);
+    background-color: rgb(177, 191, 202);
 }
