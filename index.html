@@ -11,31 +11,27 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="upper-header">        
-                <div class="searchbar">
-                    <img src="images/magnify.png" alt="Search Bar">
-                    <label for="search_bar"></label>
-                    <input type="text" name="searchBar" id="search_bar">
-                </div>
-                <div class="user-dropdown">
-                    <img src="images/bell-ring.png" alt="Notifications">
-                    <img src="" alt="User Image">
-                    <p>Morgan Oakley</p>
+            <div class="searchbar">
+                <img src="images/magnify.png" alt="Search Bar">
+                <label for="search_bar"></label>
+                <input type="text" name="searchBar" id="search_bar">
+            </div>
+            <div class="user-dropdown">
+                <img src="images/bell-ring.png" alt="Notifications">
+                <img user-img src="images/user-image.jpg" alt="User Image">
+                <p>Morgan Oakley</p>
+            </div>
+            <div class="greet-user">
+                <img src="images/user-image.jpg" alt="User Image">
+                <div class="greet-user-text">
+                    <p hello-text>Hi there,</p>
+                    <p user-name>Morgan Oakley (@morgan)</p>
                 </div>
             </div>
-            <div class="lower-header">
-                <div class="greet-user">
-                    <img src="" alt="User Image">
-                    <div class="greet-user-text">
-                        <p hello-text>Hi there,</p>
-                        <p user-name>Morgan Oakley (@morgan)</p>
-                    </div>
-                </div>
-                <div class="buttons">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </div>
+            <div class="buttons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
             </div>
         </div>
         <div class="nav">
@@ -89,6 +85,7 @@
                 <p projects-headers>Your Projects</p>
                 <div class="boxes">
                     <div class="box">
+                        <div class="light-thing"></div>
                         <p projects-headers>project1</p>
                         <p>
                             Text text Text text Text text Text text Text text Text text Text text Text text
@@ -134,15 +131,17 @@
             </div>
             <div class="announcements">
                 <p projects-headers>Announcements</p>
-                <div class="box">
+                <div class="announcement-box">
                     <div>
                         <p projects-headers>Announcement1</p>
                         <p>announcement1 text</p>
                     </div>
+                    <div class="announcement-line"></div>
                     <div>
                         <p projects-headers>Announcement2</p>
                         <p>announcement2 text</p>
                     </div>
+                    <div class="announcement-line"></div>
                     <div>
                         <p projects-headers>Announcement3</p>
                         <p>announcement3 text</p>
@@ -151,7 +150,7 @@
             </div>
             <div class="trending">
                 <p projects-headers>Trending</p>
-                <div class="box">
+                <div class="trending-box">
                     <p>trending1</p>
                     <p>trending2</p>
                     <p>trending3</p>
