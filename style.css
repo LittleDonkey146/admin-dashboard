@@ -10,7 +10,7 @@ html, body {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 }
 
@@ -32,7 +32,7 @@ html, body {
 
 .searchbar input {
     border: none;
-    width: 80%;
+    width: 100%;
     border-radius: 20px;
     background-color: rgb(205, 222, 235);
 }
@@ -161,10 +161,17 @@ html, body {
     overflow-wrap: normal;
     box-shadow:  1px 5px 5px rgb(194, 188, 188);
     border-radius: 10px;
+    border-left: 10px solid rgb(240, 192, 105);
 }
 
-.box p {
+.box p,
+.trending-box p {
     margin: 0px 20px 20px 20px;
+    font-weight: lighter;
+}
+
+.announcement-inside p {
+    margin: 0px 20px 20px 0px;
     font-weight: lighter;
 }
 
@@ -202,10 +209,24 @@ html, body {
     background-color: lightgray;
 }
 
-.light-thing {
-    height: 100%;
-    width: 5px;
-    justify-content: start;
-    align-self: flex-start;
-    background-color: orange;
+.trending-box div{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.trending-img img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.trending-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-text p[projects-headers] {
+    margin-left: 30px;
 }
